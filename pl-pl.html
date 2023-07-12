@@ -11,6 +11,7 @@
 <link rel="icon" type="image/png" sizes="16x16" href="public/images/favicons/favicon-16x16.png">
 <link rel="manifest" href="public/images/favicons/site.webmanifest">
   <script src="https://kit.fontawesome.com/fc1f7871ad.js" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
 </head>
 <body data-bs-spy="scroll" data-bs-target=".navbar">
   <img src="public/images/fillerss.svg" id="fillers" alt="">
@@ -84,31 +85,201 @@
             <div class="row align-items-center">
                 
                   <div class="col-lg-4 title">
-                    <h2><span class ="oneword">/</span>projekty</h2>
+                    <h2><span class ="oneword">/</span>projects</h2>
                   </div>
                   <div class="col-lg-8 line">
                     <img src="public/images/line.svg" alt="">
                   </div>
             </div>
           </div>
-          <div class="row align-items-top row-gap-5 ">
+          <div id="carouselExample" class="d-none d-lg-block carousel slide">
+            <div class="carousel-inner ">
+              <div class="carousel-item active">
+                <div class="row align-items-top row-gap-5 ">
+                  <div class="col-lg-1 col-md-1"></div>
+                 <div class="col-lg-3 col-md-3 cards-wrapper">
+                   <div class="portfolio">
+                     <div class="card">
+                       <img src="/public/images/Projects/portfolio middle.svg" class="card-img-top" alt="...">
+                       <div class="card-body">
+                         <div class="languages">
+                           <p>Html Css Js Css.bootstrap</p>
+                         </div>
+                         <h5 class="card-title">Portfolio</h5>
+                         <p class="card-text">Dosłownie patrzysz na to teraz</p>
+                         <a href="https://github.com/LiptonAkaSaga/Portfolio" target="_blank" class="btn btn-outline-primary">Github</a>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+                 <div class="col-lg-4 col-md-4 cards-wrapper">
+                   <div class="lamborghini">
+                     <div class="card">
+                       <img src="/public/images/Projects/lambooo 1 middle.svg" class="card-img-top" alt="...">
+                       <div class="card-body">
+                         <div class="languages">
+                           <p>3ds_Max Maya Blender</p>
+                         </div>
+                         <h5 class="card-title">Lamborghini Countach</h5>
+                         <p class="card-text">Model 3d samochodu, do prostej gry na silniku Unity</p>
+                         <a href="" class="btn btn-outline-primary">Github</a>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+                 <div class="col-lg-3 col-md-3 cards-wrapper">
+                   <div class="kuchennarewolucja">
+                     <div class="card" >
+                       <img src="public/images/Projects/Kuchennarewolucja (2) middle.svg" class="card-img-top" alt="...">
+                       <div class="card-body">
+                         <div class="languages">
+                           <p>Html Css Js Css.bootstrap</p>
+                         </div>
+                         <h5 class="card-title">kuchennarewolucja</h5>
+                         <p class="card-text">Sklep w trakcie przygotowań </p>
+                         <a href="#" class="btn btn-outline-primary">Idź Gdzieś</a>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+                 <div class="col-lg-1 col-md-1"></div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="cards-wrapper">
+                  <div class="row align-items-top row-gap-5 ">
+                    <div class="col-lg-1 col-md-1"></div>
+                   <div class="col-lg-3 col-md-3 cards-wrapper">
+                    <div class="kuchennarewolucja">
+                      <div class="card" >
+                        <img src="public/images/Projects/Kuchennarewolucja (2) middle.svg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <div class="languages">
+                            <p>Html Css Js Css.bootstrap</p>
+                          </div>
+                          <h5 class="card-title">kuchennarewolucja</h5>
+                          <p class="card-text">Sklep w trakcie przygotowań </p>
+                          <a href="#" class="btn btn-outline-primary">Idź Gdzieś</a>
+                        </div>
+                      </div>
+                    </div>
+                   </div>
+                   <div class="col-lg-4 col-md-4 cards-wrapper">
+                    <div class="portfolio">
+                      <div class="card">
+                        <img src="/public/images/Projects/portfolio middle.svg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <div class="languages">
+                            <p>Html Css Js Css.bootstrap</p>
+                          </div>
+                          <h5 class="card-title">Portfolio</h5>
+                          <p class="card-text">Dosłownie patrzysz na to teraz</p>
+                          <a href="https://github.com/LiptonAkaSaga/Portfolio" target="_blank" class="btn btn-outline-primary">Github</a>
+                        </div>
+                      </div>
+                    </div>
+                     
+                   </div>
+                   <div class="col-lg-3 col-md-3 cards-wrapper">
+                    <div class="lamborghini">
+                      <div class="card">
+                        <img src="/public/images/Projects/lambooo 1 middle.svg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <div class="languages">
+                            <p>3ds_Max Maya Blender</p>
+                          </div>
+                          <h5 class="card-title">Lamborghini Countach</h5>
+                          <p class="card-text">Model 3d samochodu, do prostej gry na silniku Unity</p>
+                          <a href="" class="btn btn-outline-primary">Github</a>
+                        </div>
+                      </div>
+                    </div>
+                     
+                   </div>
+                   <div class="col-lg-1 col-md-1"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row align-items-top row-gap-5 ">
+                  <div class="col-lg-1 col-md-1"></div>
+                 <div class="col-lg-3 col-md-3 cards-wrapper">
+                  <div class="lamborghini">
+                    <div class="card">
+                      <img src="/public/images/Projects/lambooo 1 middle.svg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <div class="languages">
+                          <p>3ds_Max Maya Blender</p>
+                        </div>
+                        <h5 class="card-title">Lamborghini Countach</h5>
+                        <p class="card-text">Model 3d samochodu, do prostej gry na silniku Unity</p>
+                        <a href="" class="btn btn-outline-primary">Github</a>
+                      </div>
+                    </div>
+                  </div>
+                 </div>
+                 <div class="col-lg-4 col-md-4 cards-wrapper">
+                  <div class="kuchennarewolucja">
+                    <div class="card" >
+                      <img width ="100%"src="public/images/Projects/Kuchennarewolucja (2) middle.svg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <div class="languages">
+                          <p>Html Css Js Css.bootstrap</p>
+                        </div>
+                        <h5 class="card-title">kuchennarewolucja</h5>
+                        <p class="card-text">Sklep w trakcie przygotowań </p>
+                        <a href="#" class="btn btn-outline-primary">Idź Gdzieś</a>
+                      </div>
+                    </div>
+                  </div>
+                 </div>
+                 <div class="col-lg-3 col-md-3 cards-wrapper">
+                  <div class="portfolio">
+                    <div class="card">
+                      <img src="/public/images/Projects/portfolio middle.svg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <div class="languages">
+                          <p>Html Css Js Css.bootstrap</p>
+                        </div>
+                        <h5 class="card-title">Portfolio</h5>
+                        <p class="card-text">Dosłownie patrzysz na to teraz</p>
+                        <a href="https://github.com/LiptonAkaSaga/Portfolio" target="_blank" class="btn btn-outline-primary">Github</a>
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+                 <div class="col-lg-1 col-md-1"></div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div class="d-lg-none row align-items-top row-gap-5 ">
             <div class="col"></div>
             <div class="col-lg-3 portfolio">
               <div class="card">
-                <img src="/public/images/Projects/portfolio.svg" class="card-img-top" alt="...">
+                <img src="/public/images/Projects/portfolio middle.svg" class="card-img-top" alt="...">
                 <div class="card-body">
                   <div class="languages">
                     <p>Html Css Js Css.bootstrap</p>
                   </div>
                   <h5 class="card-title">Portfolio</h5>
                   <p class="card-text">Dosłownie patrzysz na to teraz</p>
-                  <a href="https://github.com/LiptonAkaSaga/Portfolio" class="btn btn-outline-primary">Github</a>
+                  <a href="https://github.com/LiptonAkaSaga/Portfolio" target="_blank" class="btn btn-outline-primary">Github</a>
                 </div>
               </div>
             </div>
             <div class="col-lg-4 lamborghini">
               <div class="card">
-                <img src="/public/images/Projects/lambooo 1.svg" class="card-img-top" alt="...">
+                <img src="/public/images/Projects/lambooo 1 middle.svg" class="card-img-top" alt="...">
                 <div class="card-body">
                   <div class="languages">
                     <p>3ds_Max Maya Blender</p>
@@ -121,14 +292,14 @@
             </div>
             <div class="col-lg-3 kuchennarewolucja">
               <div class="card" >
-                <img src="public/images/Projects/Kuchennarewolucja (2).svg" class="card-img-top" alt="...">
+                <img src="public/images/Projects/Kuchennarewolucja (2) middle.svg" class="card-img-top" alt="...">
                 <div class="card-body">
                   <div class="languages">
                     <p>Html Css Js Css.bootstrap</p>
                   </div>
                   <h5 class="card-title">kuchennarewolucja</h5>
                   <p class="card-text">Sklep w trakcie przygotowań </p>
-                  <a href="#" class="btn btn-outline-primary">Go somewhere</a>
+                  <a href="#" class="btn btn-outline-primary">Idź Gdzieś</a>
                 </div>
               </div>
             </div>
@@ -253,10 +424,16 @@
                
             </div>
           </div>
+          <div id="popup">
+            <div class = "popsup">
+              <h2>Mail został wysłany pomyślnie!</h2>
+              <button id="close-popup" class="btn btn-outline-primary">Zamknij</button>
+            </div>
+          </div>
           <div class="contact">
             <div class="col-lg-3 col-md-3"></div>
             <div class="col-lg-6 col-md-6">
-                <form id="contact-form" name = "contact-form" action="/js/contactform.js" method="post">
+                <form id="contact-form" name = "contact-form" method="post">
                   <div class="col-lg-4 col-md-4 form-group">
                     <label for="name"></label>
                     <input type="text" id="name" name="name" class="form-control" placeholder="Imie" required>
@@ -277,7 +454,7 @@
                     <textarea id="message" name="message" class="form-control" rows="5"placeholder="Wiadomość" required></textarea>
                   </div>
               
-                  <button type="submit" onclick="document.getElementById('contact-form').submit();" class="btn btn-outline-primary mt-5">Wyślij</button>
+                  <button type="submit" class="btn btn-outline-primary mt-5">Wyślij</button>
                 </form>
             </div>
             <div class="col-lg-3 col-md-3"></div>
@@ -306,17 +483,17 @@
            
 
             <!-- Linkedin -->
-            <a class="Icons" href="https://www.linkedin.com/in/wiktor-czyz/" role="button"
+            <a class="Icons" href="https://www.linkedin.com/in/wiktor-czyz/" target="_blank" role="button"
             ><img src="public/images/Icons/Linkdin.svg" alt="">
             </a>
             <!-- Discord -->
-            <a class="Icons" href="https://discordapp.com/users/liptonakasaga" role="button"
+            <a class="Icons" href="https://discordapp.com/users/liptonakasaga" target="_blank" role="button"
             ><img src="public/images/Icons/Discord.svg" alt="">
             </a>
     
       
             <!-- Github -->
-            <a class="Icons" href="https://github.com/LiptonAkaSaga" role="button"
+            <a class="Icons" href="https://github.com/LiptonAkaSaga" target="_blank" role="button"
               ><img src="public/images/Icons/Github.svg" alt="">
             </a>
           
@@ -334,10 +511,6 @@
 
       </footer>
       <script src="/js/calculator-pl-pl.js"></script>
-      <script 
-      type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">    
-</script>
     <script src="/js/contactform.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
   </body>

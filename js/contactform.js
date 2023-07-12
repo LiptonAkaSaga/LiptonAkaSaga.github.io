@@ -1,37 +1,26 @@
-(function () {
-    emailjs.init("JMyRvnXrfkHph-60K");
- })();
- const serviceId ="service_4ygu22k";
- const templateId ="template_ohl8ky6";
- const handleSubmit = () => {
-    const userName = document.querySelector(".name").value;
-    const email = document.querySelector(".email").value;
-    const message = document.querySelector(".message").value;
-    if (userName==="") {
-        alert("Name is required");
-    }
-    else if (email==="") {
-        alert("email is required");
-    }
-    else if (message==="") {
-        alert("message is required");
-    }
-    else {
-    var params= {
-        name: userName,
-        email: email,
-        message: message,
-    };
-    emailjs
-    .send(serviceId, templateId, params)
-    .then((res) => {
-        document.querySelector("name").value="";
-        document.querySelector("email").value="";
-        document.querySelector("message").value="";
-        alert("mail has been sent succesfully!");
-    })
-    .catch ((err) => {
-        console.log("An error has been occured");
+emailjs.init('JMyRvnXrfkHph-60K');
+window.onload = function () {
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        var serviceID = 'service_4ygu22k';
+
+        var templateID = 'template_ohl8ky6';
+
+        emailjs.sendForm(serviceID, templateID, this)
+        .then(function() {
+            console.log('Wysłano!');
+            // Po pomyślnym wysłaniu wiadomości wyświetl okno pop-up
+            document.getElementById('popup').style.display = 'block';
+            // Czyszczenie formularza
+            document.getElementById('contact-form').reset();
+        }, function(error) {
+            console.log('Błąd wysyłania wiadomości:', error);
+        });
     });
-    }
-};
+
+    // Dodajemy nasłuchiwacz zdarzeń do przycisku zamykania okna pop-up
+    document.getElementById('close-popup').addEventListener('click', function() {
+        document.getElementById('popup').style.display = 'none';
+    });
+}
